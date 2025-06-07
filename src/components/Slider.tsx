@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 // import { title } from "process";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const data = [
   {
@@ -23,7 +23,7 @@ const data = [
 ]
 
 export default function Slider(){
-  const [currentSlider, setCurrentSlider] = useState(0)
+  const [currentSlider] = useState(0)
 
   // useEffect(()=>{
   //    const interval = setInterval(
