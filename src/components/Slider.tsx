@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import { title } from "process";
+// import { title } from "process";
 import { useEffect, useState } from "react";
 
 const data = [

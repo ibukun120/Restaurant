@@ -1,6 +1,6 @@
 import { featuredProducts } from "@/data"
 import Image from "next/image"
-import { it } from "node:test"
+// import { it } from "node:test"
 import React from "react"
 
 export default function Featured(){
