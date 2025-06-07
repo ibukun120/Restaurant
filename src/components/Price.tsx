@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 
 type Props = {
   price: number;
-  id?: number;
+  id: number;
   options?: { title: string; additionalPrice: number }[];
 };
 
@@ -37,6 +37,7 @@ const Price = ({ price, id, options }: Props) => {
             }}
             onClick={() => setSelected(index)}
           >
+            <h1 className="hidden">{id}</h1>
             {option.title}
           </button>
         ))}
