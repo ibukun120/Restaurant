@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React, { useState } from "react"
 import CartIcon from "./Carticon";
+import Image from "next/image";
 
 const links = [
   {id: 1, title: "Homepage", url:"/"},
@@ -17,7 +18,7 @@ export default function Menu(){
   const user = false;
   return(
     <div>
-      {!open ? (<img src="/open.png" alt="" className="cursor-pointer" width={20} height={20} onClick={()=>setOpen(true)}/>) : (<img src="/close.png" alt="" className="cursor-pointer" width={20} height={20} onClick={()=>setOpen(false)}/>)
+      {!open ? (<Image src="/open.png" alt="" className="cursor-pointer" width={20} height={20} onClick={()=>setOpen(true)}/>) : (<Image src="/close.png" alt="" className="cursor-pointer" width={20} height={20} onClick={()=>setOpen(false)}/>)
     }
 
     {open && <div className=" w-full bg-red-500 text-white absolute left-0 top-24 h-[calc(100vh-24rem)] flex flex-col gap-8 items-center text-3xl z-50">
