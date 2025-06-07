@@ -5,13 +5,13 @@ import React, { useEffect, useState } from "react";
 
 type Props = {
   price: number;
-  // id: number;
+  id: number;
   options?: { title: string; additionalPrice: number }[];
 };
 
 //  id, <= this id was part of the Price props but was cut out for deployment reasons
 
-const Price = ({ price, options }: Props) => {
+const Price = ({ price, id, options }: Props) => {
   const [total, setTotal] = useState(price);
   const [quantity, setQuantity] = useState(1);
   const [selected, setSelected] = useState(0);
