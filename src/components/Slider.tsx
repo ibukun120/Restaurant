@@ -33,7 +33,7 @@ export default function Slider(){
   //      return () => clearInterval(interval); 
   //  }, []);
   return(
-    <div className="flex flex-col h-[calc(100vh-2rem)] md:h-[calc(100vh-3rem)] lg:flex-row">
+    <div className="flex flex-col h-[calc(100vh-0.5rem)] md:h-[calc(100vh-3rem)] lg:flex-row">
       {/*text container*/}
       <div className="h-1/2 flex items-center justify-center flex-col gap-8 text-red-500 font-bold lg:h-full lg:w-1/2 bg-fuchsia-50">
         <h1 className="text-center text-5xl p-4  md:text-6xl xl:text-7xl uppercase ">
